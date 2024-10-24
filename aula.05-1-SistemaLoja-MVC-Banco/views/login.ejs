@@ -1,0 +1,20 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/navbar.ejs') %>
+
+<div class=" conteiner col-4">
+    <div class="card mt-4">
+        <div class="card-header">
+            <h2>Login de Administrador</h2>
+        </div>
+        <div class="card-body m-auto">
+            <p style="color: red; font-size: 0.7em;">Você precisa estar logado para acessar os recursos dod paine.</p>
+            <form action="/authenticate" method="POST">
+                <label>E-mail:</label>
+                <input type="password" class="form-control" nome="password" placeholder="Insira sua senha:" required>
+                <input type ="submit" class="btn btn-sucess btn-block" value="Entrar">
+                <hr>
+                <h6>Não possui conta? <a href="/cadastro">Cadastre-se</a></h6>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<%- include('partials/header.ejs') %>
+  <%- include('partials/navbar.ejs') %>
+
+    <div class="wrapper">
+      <h1 class="title">Aqui você pode conferir nossas ofertas!</h1>
+      <div class="body-cards">
+        <% listaProdutos.forEach((produto)=> { %>
+          <div class="card">
+            <div class="card-body">
+              <img src="<%= produto.imagem || '/imgs/default.jpg' %>" width="105px" height="150px">
+              <p class="label-card">
+                <%= produto.produto %>
+                  <%= produto.valor %>
+                    </a>
+              </p>
+            </div>
+          </div>
+          <% }) %>
+      </div>
+    </div>
+    <%- include('partials/footer.ejs') %>

@@ -1,0 +1,36 @@
+<%- include ('partials/header.ejs') %>
+<%- include ('partials/navbar.ejs') %>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h1>Produtos</h1>
+            </div>
+            <div class="card-body">
+                <table>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Nome:</th>
+                            <th>Preço:</th>
+                            <th>Categoria:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <% produtos.forEach(produto => { %>
+                        <tr>
+                            <td><img src="imgs/product.png" width="30px"></td>
+                            <td><%= produto.nome %></td>
+                            <td><%= produto.preco.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'}) %></td>
+                            <td><%= produto.categoria %></td>
+                            <td><a style = "color: orange;" href="">Editar</a></td>
+                            <td><a style = "color: red " href="">Deletar</a></td>
+                        </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+<%- include ('partials/footer.ejs') %>

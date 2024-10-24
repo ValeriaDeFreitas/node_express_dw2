@@ -1,0 +1,132 @@
+.title{
+  color: #527853;
+  font-size: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.navbar{
+  background-color:#F9E8D9;
+  display: flex;
+  align-items: center;
+  border: 3px;
+  border-color: #EE7214;
+}
+.header{
+  background-color: #F9E8D9;
+}
+.footer{
+  background-color: #EE7214;
+  justify-content: center;
+}
+
+.wrapper{
+  background-color: #F1F8E8;
+  display: grid;
+  position: relative;
+  justify-items: center;
+  height: auto;
+}
+
+.nav-item:hover{
+  background-color: #527853;
+  border-radius: 50px;
+}
+.nav-item{
+  font-size: 15px;
+  margin-top: 12%;
+}
+.subtitle{
+  font-size: 20px;
+}
+.label{
+  font-size: 16px;
+}
+.img{
+  position: relative;
+  top: -600px;
+  width: 50%;
+  height: 90%;
+  z-index: 2;
+}
+.nav-brand{
+  width: 40px;
+}
+
+.table{
+  height: 200px;
+  width: 800px;
+ --bs-table-bg: #F8EDE3;
+ border-color: #D0B8A8;
+}
+
+.card{
+  margin: 40px;
+  width: 200px;
+  height: 250px;
+  background-color: #527853;
+  border-radius:10%;
+  border-color: #C5705D;
+}
+.label-card{
+  color: white;
+  text-align: left;
+}
+
+.body-cards{
+  display: flex;
+  justify-content:space-around;
+  padding: 100px;
+  flex-wrap: wrap;
+  background-color: #F1F8E8;
+}
+.card-body{
+  display: grid;
+  justify-content:center ;
+  margin-left: 30px;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  right: 40%;
+  background-color: lightgreen;
+  position: relative;
+  z-index: 1;
+}
+
+.organic-shape-1 {
+  position: relative;
+  width: 280px;
+  height: 230px;
+  top: -40%;
+  left: 40%;
+  border-radius: 50% 20% 30% 70%;
+  background-color: #527853;
+  z-index: 1;
+}
+
+.organic-shape-2 {
+  position: relative;
+  width: 250px;
+  height: 170px;
+  border-radius: 30% 50% 30% 50%;
+  background-color: lightgreen;
+  left: 25%;
+  z-index: 1;
+}
+
+.organic-shape-3 {
+  width: 180px;
+  height: 160px;
+  border-radius: 10% 90% 80% 20%;
+  background-color: #527853;
+  right: 45%;
+  position: relative;
+  z-index: 1;
+}
+.title-home{
+  color: #527853;
+  font-size: 30px;
+  z-index: 2;
+  margin-top: -45%;
+}
