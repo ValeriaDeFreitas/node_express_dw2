@@ -1,0 +1,45 @@
+<%- include ('partials/header.ejs') %>
+
+    <% if (messages.danger) {%>
+        <div class="alert alert-danger">
+            <%= messages.danger %>
+        </div>
+        <%}%>
+            <% if (messages.success) {%>
+                <div class="alert alert-success">
+                    <%= messages.success %>
+                </div>
+                <%}%>
+                    <div class="wrapper">
+                        <h1 class="label">Bem vindo!</h1>
+                        <h2 class="label">Efetue login para entrar</h2>
+                        <div class="container col-4 conteiner-c wrapper">
+                            <div class="card-l mt-4">
+                                <div class="card-header">
+                                    <h2>Login de administrador</h2>
+                                </div>
+                                <div class="card-body-l m-auto">
+                                    <p style="color: white; font-size: 0.7em;">Você precisa estar logado
+                                        para acessar os
+                                        recursos do painel.</p>
+                                    <form action="/authenticate" method="POST">
+                                        <label>E-mail:</label>
+                                        <input type="email" class="form-control" name="email"
+                                            placeholder="email@exemplo.com" required><br>
+
+                                        <label>Senha:</label>
+                                        <input type="password" class="form-control" name="password"
+                                            placeholder="Insira sua senha" required><br>
+                                        <a href="/views/index.ejs">
+                                            <input type="submit" class="btn btn-success btn-block" value="Entrar"
+                                                style="background-color: #914F1E; border-color: #914F1E;">
+                                        </a>
+                                    </form>
+                                    <hr>
+                                    <h6>Não possui conta? <a href="/cadastro" style="color: white;">Cadastre-se!</a>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <%- include ('partials/footer.ejs') %>

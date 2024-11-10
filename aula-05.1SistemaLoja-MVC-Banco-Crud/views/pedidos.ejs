@@ -1,0 +1,34 @@
+<%- include ('partials/navbar.ejs') %>
+    <%- include ('partials/header.ejs') %>
+
+
+        <div class="wrapper">
+            <h1 class="title">Pedidos</h1>
+            <table border="1" class="table">
+                <tr>
+                    <th width="300px" class="subtitle">Cliente:</th>
+                    <th width="300px" class="subtitle">Código do produto:</th>
+                    <th width="300px" class="subtitle">Produto:</th>
+                    <th width="300px" class="subtitle">Preços:</th>
+                </tr>
+                <% pedidos.forEach((pedidos)=>{ %>
+                    <tr>
+                        <td class="label">
+                            <%= pedidos.cliente %>
+                        </td>
+                        <td class="label">
+                            <%= pedidos.codProduto %>
+                        </td>
+                        <td class="label">
+                            <%= pedidos.produto %>
+                        </td>
+                        <td class="label">
+                            <%= pedidos.valor %>
+                        </td>
+                    </tr>
+                    <% }) %>
+            </table>
+
+        </div>
+
+        <%- include ('partials/footer.ejs') %>
