@@ -1,0 +1,50 @@
+body {
+    background-color: #FFCAD4;
+  }
+  
+  .navbar {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 10px 20px;
+      font-family: 'Poppins', sans-serif; 
+  }
+  
+  .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #1B3C73; 
+  }
+  
+  .navbar-brand:hover {
+      color: #000; 
+      text-decoration: none;
+  }
+  
+  .navbar-nav .nav-item .nav-link {
+      color: #1B3C73; 
+      font-size: 1.2rem;
+      margin-left: 15px;
+      padding-bottom: 5px; 
+      text-decoration: none; 
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover {
+      color: #1B3C73; 
+      text-decoration: none; 
+  }
+  
+  .navbar-nav .nav-item .nav-link.active {
+      border-bottom: 2px solid #3498db; 
+      text-decoration: underline; 
+  }
+  .card{
+    height: 800px;
+    background-image: url('/imgs/disney.jpg');
+  }
+  .btn{
+    background-color: #1B3C73;
+  }
+  label{
+    font-size: larger;
+    color: #432E54;
+  }
+  
